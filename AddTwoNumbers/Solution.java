@@ -1,3 +1,4 @@
+package AddTwoNumbers;
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,6 +9,9 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+// https://leetcode.com/problems/add-two-numbers/
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 class Solution {
@@ -40,7 +44,7 @@ class Solution {
             if(i == numberString.length() -1 ){
                 temp.val = Integer.parseInt(String.valueOf(c));
             } else {
-                temp.next = new                         ListNode(Integer.parseInt(String.valueOf(c)),null);
+                temp.next = new ListNode(Integer.parseInt(String.valueOf(c)),null);
                 temp = temp.next;
             }
         }
